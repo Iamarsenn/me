@@ -1,1 +1,16 @@
-print("my name is botokaraev zafarbek and my nickname is arsen")
+# i=int(input("write your seconds "))
+# p=i/3600
+# f=i/60
+# print(p,"hours",f,"minutes and ",i,"seconds")
+
+# i=float(input("write hours "))
+# d=float(input("write rate "))
+# print("your salary is",i*d)
+
+# u=input("write c if you want to count c from farenheits or f if you want to count celciums ")
+# if u=="c":
+#     i=float(input("write farenheits "))
+#     print((i-32) * 5/9)
+# else:
+#     i=float(input("write celciums "))
+#     print((i * 9/5) + 32)
