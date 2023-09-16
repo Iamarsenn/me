@@ -1,4 +1,3 @@
-hours = float(input("Enter Hours:"))
-rate = float(input("Enter Rate:"))
-salary = hours*rate
-print("Salary:",salary)
+hours=float(input("write your hours "))
+rate=float(input("write your rate "))
+print("your salary is ",hours*rate)
