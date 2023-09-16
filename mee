@@ -4,15 +4,6 @@ rate=float(input("write your rate "))
 print("ypur salary is ",hours*rate)
 
 #task2
-seconds=int(input("write seconds here "))
-int_hours=seconds//3600
-int_minutes=(seconds-(int_hours*3600))//60
-remaining_seconds=seconds-((int_hours*3600)+(int_minutes*60))
-print(int_hours,"hours")
-print(int_minutes,"minutes")
-print(remaining_seconds,"seconds")
-
-#task3
 decision=input("print c if you want to make farenheits \nprint f if you want to make celciums ")
 if decision=="c":
     celciums=float(input("write here your celciums "))
@@ -20,3 +11,12 @@ if decision=="c":
 if decision=="f":
     farenheits=float(input("write here your farenheits "))
     print((farenheits-32) * 5/9,"celciums")
+
+#task3
+seconds=int(input("write seconds here "))
+int_hours=seconds//3600
+int_minutes=(seconds-(int_hours*3600))//60
+remaining_seconds=seconds-((int_hours*3600)+(int_minutes*60))
+print(int_hours,"hours")
+print(int_minutes,"minutes")
+print(remaining_seconds,"seconds")
