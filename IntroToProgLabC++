@@ -52,3 +52,120 @@ main()
     add(matrixC, matrixA, matrixB);
     outputMatrix(matrixC);
 }
+
+
+PART 2
+
+#include <iostream>
+using namespace std;
+
+void inputMatrix(int matrix[2][2])
+{
+    int row, col;
+    
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            cout<<"Enter the value of ["<<row<<"] ["<<col<<"]: ";
+            cin>>matrix[row][col];
+        }
+    }
+}
+
+void outputMatrix(int matrix[2][2])
+{
+    int row, col;
+    
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            cout<<matrix[row][col]<<"\t";
+        }
+        cout<<endl;
+    }
+}
+void add(int matrixC[2][2], int matrixA[2][2], int matrixB[2][2])
+{
+    int row,col;
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            matrixC[row][col] = matrixA[row][col] - matrixB[row][col];
+        }
+    }
+}
+main()
+{
+    int matrixA[2][2],matrixB[2][2],matrixC[2][2];
+    inputMatrix(matrixA);
+    inputMatrix(matrixB);
+    
+    outputMatrix(matrixA);
+    cout<<endl;
+    outputMatrix(matrixB);
+    cout<<endl;
+    add(matrixC, matrixA, matrixB);
+    outputMatrix(matrixC);
+}
+
+
+PART 3
+
+
+#include <iostream>
+using namespace std;
+
+void inputMatrix(int matrix[2][2])
+{
+    int row, col;
+    
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            cout<<"Enter the value of ["<<row<<"] ["<<col<<"]: ";
+            cin>>matrix[row][col];
+        }
+    }
+}
+
+void outputMatrix(int matrix[2][2])
+{
+    int row, col;
+    
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            cout<<matrix[row][col]<<"\t";
+        }
+        cout<<endl;
+    }
+}
+void add(int matrixC[2][2], int matrixA[2][2], int matrixB[2][2])
+{
+    int row,col;
+    for(row=0;row<2;row++)
+    {
+        for(col=0;col<2;col++)
+        {
+            matrixC[row][col] = matrixA[row][col] * matrixB[row][col];
+        }
+    }
+}
+main()
+{
+    int matrixA[2][2],matrixB[2][2],matrixC[2][2];
+    inputMatrix(matrixA);
+    inputMatrix(matrixB);
+    
+    outputMatrix(matrixA);
+    cout<<endl;
+    outputMatrix(matrixB);
+    cout<<endl;
+    add(matrixC, matrixA, matrixB);
+    outputMatrix(matrixC);
+}
