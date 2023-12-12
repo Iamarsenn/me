@@ -1,6 +1,6 @@
 from PIL import Image, ImageTk, ImageEnhance
 import tkinter as tk
-from tkinter import messagebox 
+from tkinter import messagebox
 import requests
 from io import BytesIO
 class ColorblindTestApp:
@@ -13,6 +13,11 @@ class ColorblindTestApp:
             {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image10.jpg", "number": 12},
             {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image11.jpg", "number": 29},
             {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image3.jpg", "number": 26},
+            {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image12.jpg","number":8},
+            {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image9.jpg","number":45},
+            {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image8.jpg","number":16},
+            {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image7.jpg","number":5},
+            {"url": "https://cdn-beaai.nitrocdn.com/DsHNrqyidSdrnEUwxpnDFmLjguAlTfrt/assets/images/optimized/rev-3b37200/colormax.org/wp-content/uploads/2015/08/colorblind-test-image4.jpg","number": 15}
         ]
         self.current_image_index = 0
         self.prev_image_button = tk.Button(root, text="Previous image", command=self.prev_image)
